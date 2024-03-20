@@ -20,9 +20,9 @@ class FlynnStack {
     show(): string {
         let values = ""
         for (let counter = 0; counter < this.strstack.length; counter++) {
-                values += this.strstack[counter] + ""
+                values += this.strstack[counter] + ", "
         }
-        values = values.trim()
+        values = values.substring(0, values.length - 2)
         return values
     }
 }

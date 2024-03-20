@@ -6,7 +6,7 @@
  * since 2024-03-19
  */
 
-import { FlynnStack } from './FlynnStack'
+import FlynnStack from "./FlynnStack"
 
 let fruits = new FlynnStack()
 fruits.push("apple")
