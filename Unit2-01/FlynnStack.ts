@@ -7,24 +7,25 @@
  */
 
 class FlynnStack {
-    // strstack: string[]
+    strstack: string[]
     
     constructor() {
-        self.strstack = []
+        this.strstack = []
     }
 
-    push(input) {
-        self.strstack.push(input)
+    push(input: string): void {
+        this.strstack.push(input)
     }
 
-    show() {
+    show(): string {
         let values = ""
-        for (let counter = 0; counter < self.strstack.length; counter++) {
-                values = values + self.strstack[counter] + ""
+        for (let counter = 0; counter < this.strstack.length; counter++) {
+                values += this.strstack[counter] + ""
         }
-        values = values.substring(0, values.length-2)
+        values = values.trim()
         return values
     }
 }
+
 export = FlynnStack
 
