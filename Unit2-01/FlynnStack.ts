@@ -7,8 +7,7 @@
  */
 
 class FlynnStack {
-    strstack: string[] = []
-    
+    private strstack: string[] = []
     constructor() {
         // Constructor body, if any
     }
@@ -28,3 +27,4 @@ class FlynnStack {
 }
 
 export = FlynnStack
+
