@@ -1,26 +1,30 @@
 /**
- * This is the program for using the MrCoxallStack class
+ * This is the FlynnStack class.
  *
  * author Flynn Rundquist
  * version 1.0
  * since 2024-03-19
  */
 
-class MrCoxallStack {
-	fruit_stack = MrCoxallStack()
-	fruit_stack.push('apple')
-	fruit_stack.push('banana')
-	fruit_stack.push('cherry')
+class FlynnStack {
+    // strstack: string[]
+    
+    constructor() {
+        self.strstack = []
+    }
 
-	colour_stack = MrCoxallStack()
-	colour_stack.push('red')
-	colour_stack.push('green')
-	colour_stack.push('blue')
+    push(input) {
+        self.strstack.push(input)
+    }
 
-	mammal_stack = MrCoxallStack()
-	mammal_stack.push('dog')
-	mammanl_stack.push('cat')
-	mammal_stack('whale')
+    show() {
+        let values = ""
+        for (let counter = 0; counter < self.strstack.length; counter++) {
+                values = values + self.strstack[counter] + ""
+        }
+        values = values.substring(0, values.length-2)
+        return values
+    }
 }
-export = MrCoxallStack
+export = FlynnStack
 
