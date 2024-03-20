@@ -7,10 +7,10 @@
  */
 
 class FlynnStack {
-    strstack: string[]
+    strstack: string[] = []
     
     constructor() {
-        this.strstack = []
+        // Constructor body, if any
     }
 
     push(input: string): void {
@@ -28,4 +28,3 @@ class FlynnStack {
 }
 
 export = FlynnStack
-
