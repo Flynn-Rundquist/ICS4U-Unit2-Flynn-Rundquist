@@ -7,20 +7,23 @@
  */
 
 class FlynnStack {
-    strStack: string[]
-    
-    constructor() {
+    // array to store strings
     private strStack: string[] = []
+    // constructor
     constructor() {
     }
 
+    // method to remove and return the last value in the stack
     pop(): string {
         return this.strStack.pop()
     }
+
+    // method to add a string to the stack
     push(input: string): void {
         this.strStack.push(input)
     }
 
+    // method to show the stack
     show(): string {
         let values = ""
         for (let counter = 0; counter < this.strStack.length; counter++) {
@@ -31,5 +34,5 @@ class FlynnStack {
     }
 }
 
-export default = FlynnStack
+export default FlynnStack
 
