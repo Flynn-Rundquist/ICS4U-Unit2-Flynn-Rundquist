@@ -13,11 +13,6 @@ class FlynnStack {
     constructor() {
     }
 
-    // method to remove and return the last value in the stack
-    pop(): string {
-        return this.strStack.pop()
-    }
-
     // method to add a string to the stack
     push(input: string): void {
         this.strStack.push(input)
