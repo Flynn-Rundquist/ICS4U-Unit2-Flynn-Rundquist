@@ -10,7 +10,8 @@ class FlynnStack {
     strStack: string[]
     
     constructor() {
-        this.strStack = []
+    private strStack: string[] = []
+    constructor() {
     }
 
     pop(): string {
