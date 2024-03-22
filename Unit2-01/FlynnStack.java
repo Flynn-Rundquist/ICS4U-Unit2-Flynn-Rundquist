@@ -33,10 +33,7 @@ public class FlynnStack {
                 output += stack[counter] + ", ";
             }
         }
-        if (!output.isEmpty()) {
-            output = output.substring(0, output.length() - 2);
+        output = output.substring(0, output.length() - 2);
         }
         return output;
     }
-}
-export default FlynnStack
