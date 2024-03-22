@@ -10,7 +10,7 @@ public class FlynnStack {
     // array to store strings
     private String[] stack;
     // constructor
-    public NTNStack(int size) {
+    public FlynnStack(int size) {
         stack = new String[size];
     }
     // push method
