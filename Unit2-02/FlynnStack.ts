@@ -10,12 +10,22 @@ class FlynnStack {
     // array to store strings
     private strStack: string[] = []
     // constructor
-    constructor() {
+    public getConstructor(): string {
+        return this.constructor.name
     }
 
     // method to add a string to the stack
     push(input: string): void {
         this.strStack.push(input)
+    }
+
+    // method to remove a string from stack without using pop()
+    if (this.strStack.length > 0) {
+        top_item = this.strStack[this.strStack.length - 1]
+        this.strStack = this.strStack.slice(0, this.strStack.length - 1)
+        return top_item
+    } else {
+        return_value = "Stack is empty"
     }
 
     // method to show the stack
