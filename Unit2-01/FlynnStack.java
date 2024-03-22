@@ -9,10 +9,12 @@
 public class FlynnStack {
     // array to store strings
     private String[] stack;
+    
     // constructor
     public FlynnStack(int size) {
         stack = new String[size];
     }
+    
     // push method
     public void push(String item) {
         for (int counter = 0; counter < stack.length; counter++) {
@@ -24,16 +26,17 @@ public class FlynnStack {
     }
 
     // method to show the stack
-    public void show() {
-    string output = "";
+    public String show() {
+        String output = "";
         for (int counter = 0; counter < stack.length; counter++) {
             if (stack[counter] != null) {
                 output += stack[counter] + ", ";
             }
         }
-        output = output.substring(0, output.length() - 2);
+        if (!output.isEmpty()) {
+            output = output.substring(0, output.length() - 2);
+        }
         return output;
     }
-
+}
 export default FlynnStack
-
