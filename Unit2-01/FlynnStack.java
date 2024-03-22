@@ -1,21 +1,31 @@
 /**
- * The FlynnStack class
- * 
+ * The FlynnStack class.
+ *
  * @author Flynn Rundquist
  * @version 1.0
  * @since 2024-03-22
  */
 
-public class FlynnStack {
-    // array to store strings
+final class FlynnStack {
+    /**
+     * Private constructor prevents instantiation of this class.
+     */
     private String[] stack;
-    
-    // constructor
-    public FlynnStack(int size) {
+
+    /**
+     * Constructor.
+     *
+     * @param size The size of the stack
+     */
+    FlynnStack(int size) {
         stack = new String[size];
     }
-    
-    // push method
+
+    /**
+     * Method to push an item.
+     *
+     * @param item The item
+     */
     public void push(String item) {
         for (int counter = 0; counter < stack.length; counter++) {
             if (stack[counter] == null) {
@@ -25,7 +35,11 @@ public class FlynnStack {
         }
     }
 
-    // method to show the stack
+    /**
+     * Method to show the stack.
+     *
+     * @return The stack
+     */
     public String show() {
         String output = "";
         for (int counter = 0; counter < stack.length; counter++) {
@@ -39,3 +53,4 @@ public class FlynnStack {
         return output;
     }
 }
+
