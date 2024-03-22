@@ -33,7 +33,9 @@ public class FlynnStack {
                 output += stack[counter] + ", ";
             }
         }
-        output = output.substring(0, output.length() - 2);
+        if (!output.isEmpty()) {
+            output = output.substring(0, output.length() - 2);
         }
         return output;
     }
+}
