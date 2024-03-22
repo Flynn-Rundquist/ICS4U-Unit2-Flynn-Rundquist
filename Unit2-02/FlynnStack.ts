@@ -20,12 +20,14 @@ class FlynnStack {
     }
 
     // method to remove a string from stack without using pop()
-    if (this.strStack.length > 0) {
-        top_item = this.strStack[this.strStack.length - 1]
-        this.strStack = this.strStack.slice(0, this.strStack.length - 1)
-        return top_item
-    } else {
-        return_value = "Stack is empty"
+    pop(): string {
+        if (this.strStack.length > 0) {
+            const top_item = this.strStack[this.strStack.length - 1]
+            this.strStack = this.strStack.slice(0, this.strStack.length - 1)
+            return top_item
+        } else {
+            return "Stack is empty"
+        }
     }
 
     // method to show the stack
