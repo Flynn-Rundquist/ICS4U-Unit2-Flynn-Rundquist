@@ -17,7 +17,11 @@ final class FlynnStack {
      *
      * @param size The size of the stack
      */
+<<<<<<< HEAD
     FlynnStack() {
+=======
+    FlynnStack(int size) {
+>>>>>>> 946cd052f05dab6c5da18fd9b35e975f095d29cc
         stack = new String[];
     }
 
