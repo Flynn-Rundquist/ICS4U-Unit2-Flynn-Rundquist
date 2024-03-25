@@ -13,19 +13,19 @@ public class Main {
      * @param args The command line arguments
      */
     public static void main(String[] args) {
-        FlynnStack fruits = new FlynnStack(3);
+        FlynnStack fruits = new FlynnStack();
         fruits.push("apple");
         fruits.push("banana");
         fruits.push("cherry");
         System.out.println("Fruits: " + fruits.show());
 
-        FlynnStack colours = new FlynnStack(3);
+        FlynnStack colours = new FlynnStack();
         colours.push("red");
         colours.push("blue");
         colours.push("purple");
         System.out.println("Colours: " + colours.show());
 
-        FlynnStack animals = new FlynnStack(3);
+        FlynnStack animals = new FlynnStack();
         animals.push("dog");
         animals.push("bird");
         animals.push("cat");
