@@ -30,6 +30,21 @@ class FlynnStack {
         }
     }
 
+    // method to check if the stack is empty
+    isEmpty(): boolean {
+        if (this.strStack.length > 0) {
+            return false
+        } else {
+            return true
+        }
+    }
+
+    // method to say the size of the stack
+    size(): number {
+        const stackSize = this.strStack.length
+        return stackSize
+    }
+
     // method to show the stack
     show(): string {
         let values = ""
