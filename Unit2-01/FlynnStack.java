@@ -7,54 +7,50 @@
  */
 
 final class FlynnStack {
+
     /**
-     * Private constructor prevents instantiation of this class.
+     * The main() method.
+     *
+     * @param args The command line arguments
      */
     private String[] stack;
 
     /**
-     * Constructor.
-     *
-     * @param size The size of the stack
+     * Creates an empty stack.
      */
-<<<<<<< HEAD
-    FlynnStack() {
-=======
-    FlynnStack(int size) {
->>>>>>> 946cd052f05dab6c5da18fd9b35e975f095d29cc
-        stack = new String[];
+    public FlynnStack() {
+        stack = new String[0];
     }
 
     /**
-     * Method to push an item.
+     * Pushes an item onto the stack.
      *
-     * @param item The item
+     * @param item The item to push
      */
     public void push(String item) {
+        String[] newStack = new String[stack.length + 1];
         for (int counter = 0; counter < stack.length; counter++) {
-            if (stack[counter] == null) {
-                stack[counter] = item;
-                break;
-            }
+            newStack[counter] = stack[counter];
         }
+        newStack[newStack.length - 1] = item;
+        stack = newStack;
     }
 
     /**
-     * Method to show the stack.
+     * Shows the stack.
      *
      * @return The stack
      */
     public String show() {
-        String output = "";
+        String values = "";
         for (int counter = 0; counter < stack.length; counter++) {
-            if (stack[counter] != null) {
-                output += stack[counter] + ", ";
+            values += stack[counter];
+            if (counter < stack.length - 1) {
+                values += ", ";
             }
         }
-        if (!output.isEmpty()) {
-            output = output.substring(0, output.length() - 2);
-        }
-        return output;
+        values += "";
+        return values;
     }
 }
 
