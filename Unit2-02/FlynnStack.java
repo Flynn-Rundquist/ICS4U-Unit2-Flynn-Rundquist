@@ -37,6 +37,21 @@ final class FlynnStack {
     }
 
     /**
+     * Pops an item off the stack.
+     *
+     * @return The item
+     */
+    public String pop() {
+        String top_item = stack[stack.length - 1];
+        String[] newStack = new String[stack.length - 1];
+        for (int counter = 0; counter < newStack.length; counter++) {
+            newStack[counter] = stack[counter];
+        }
+        stack = newStack;
+        return top_item;
+    }
+
+    /**
      * Shows the stack.
      *
      * @return The stack
