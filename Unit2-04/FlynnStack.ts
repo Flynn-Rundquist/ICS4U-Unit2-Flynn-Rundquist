@@ -63,12 +63,11 @@ class FlynnStack {
         values = values.substring(0, values.length - 2)
         return values
     }
-}
-
-    // method to empty stack
+     // method to empty stack
     clearStack(): void {
         this.strStack = []
     }
+}
 
 export default FlynnStack
  
