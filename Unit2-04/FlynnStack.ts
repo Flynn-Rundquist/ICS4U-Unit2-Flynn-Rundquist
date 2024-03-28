@@ -19,6 +19,15 @@ class FlynnStack {
         this.strStack.push(input)
     }
 
+    // method to show the top of the stack
+    peek(): string {
+        if (this.strStack.length > 0) {
+            return this.strStack[this.strStack.length - 1]
+        } else {
+            return "Stack is empty"
+        }
+    }
+
     // method to remove a string from stack without using pop()
     pop(): string {
         if (this.strStack.length > 0) {
@@ -55,6 +64,11 @@ class FlynnStack {
         return values
     }
 }
+
+    // method to empty stack
+    clearStack(): void {
+        this.strStack = []
+    }
 
 export default FlynnStack
  
