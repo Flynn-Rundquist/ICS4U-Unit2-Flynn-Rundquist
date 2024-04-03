@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
  * This program finds the largest run in a string.
@@ -7,31 +8,26 @@
  * @since 2024-04-03
  */
 
-import java.util.Scanner;
-
 final class Main {
     /**
-     * Private constructor so this utility class cannot be instantiated.
+     * Private constructor to prevent instantiation.
      */
     private Main() {
-        throw new IllegalStateException("Utility class");
     }
     /**
-     * Main method.
+     * The main method.
      *
-     * @param args the command line arguments
+     * @param args Unused
+     * @throws IllegalStateException if this class is instantiated
      */
-    public static void main(String[] args) {
-        /**
-         * Scanner object for user input.
-         * @see java.util.Scanner
-         */
-        Scanner scanner = new Scanner(System.in);
+
+    static void main(String[] args) {
+        final Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
-        String userInput = scanner.nextLine();
+        final String userInput = scanner.nextLine();
 
-        char[] userArray = userInput.toCharArray();
+        final char[] userArray = userInput.toCharArray();
         int maxRun = 0;
 
         for (int counter = 0; counter < userArray.length; counter++) {
@@ -39,7 +35,6 @@ final class Main {
             while (counter < userArray.length - 1
                             && userArray[counter] == userArray[counter + 1]) {
                 currentRun++;
-                counter++;
             }
             if (currentRun > maxRun) {
                 maxRun = currentRun;
