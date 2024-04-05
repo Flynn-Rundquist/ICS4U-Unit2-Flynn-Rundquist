@@ -52,6 +52,25 @@ final class FlynnStack {
     }
 
     /**
+     * Checks if the stack is empty.
+     *
+     * @return True if the stack is empty
+     */
+    public boolean isEmpty() {
+        return stack.length == 0;
+    }
+
+    /**
+     * Returns the size of the stack.
+     *
+     * @return The size
+     */
+    public int size() {
+        int final stackSize = stack.length;
+        return stackSize;
+    }
+
+    /**
      * Shows the stack.
      *
      * @return The stack
