@@ -14,7 +14,7 @@ constructor(speed: number = 0) {
 }
 
   // set speed
-  public setSpeed(speed: number) {
+  public setSpeed(speed: number): number {
     this.speed = speed
     return this.speed
   }
