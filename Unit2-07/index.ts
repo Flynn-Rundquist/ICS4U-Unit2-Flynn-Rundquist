@@ -6,8 +6,8 @@
 * @since   2022-04-10
 */
 
-import { Truck } from "./Truck"
-import { Bike } from "./Bike"
+import Truck from "./Truck"
+import Bike from "./Bike"
 
 const bmx = new Bike('Red', 40)
 

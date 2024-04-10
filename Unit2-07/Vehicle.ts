@@ -6,16 +6,12 @@
  * Since:   2024-04-02
  */
 class Vehicle {
-    private color: string
-    private liscensePlate: string
-    private numberOfDoors: number
-    private speed: number
-    private maxSpeed: number
+    protected color: string
+    protected speed: number
+    protected maxSpeed: number
 
-    constructor (color = 'unknown', liscensePlate = 'unknown', numberOfDoors = 4, maxSpeed = 0, speed = 0) {
+    constructor (color = 'unknown', maxSpeed = 0, speed = 0) {
         this.color = color
-        this.liscensePlate = liscensePlate
-        this.numberOfDoors = numberOfDoors
         this.speed = speed
         this.maxSpeed = maxSpeed
     }
@@ -35,8 +31,6 @@ class Vehicle {
     status (): void {
         console.log(`-> Speed: ${this.speed}`)
         console.log(`-> Max Speed: ${this.maxSpeed}`)
-        console.log(`-> Number of doors: ${this.numberOfDoors}`)
-        console.log(`-> Liscence plate: ${this.liscensePlate}`)
         console.log(`-> Color: ${this.color}`)
     }
 }
