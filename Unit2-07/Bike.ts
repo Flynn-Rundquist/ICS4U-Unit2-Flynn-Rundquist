@@ -9,22 +9,32 @@
 import Vehicle from './Vehicle'
 
 class Bike extends Vehicle {
-    private cadence: number
-
-    constructor(cadence = 0) {
+    public cadense: number
+    constructor(colour = 'unknown', maxSpeed = 0, cadense = 0, speed = 0) {
         super()
-        this.cadence = cadence
+        this.cadense = cadense
+        this.color = colour
+        this.maxSpeed = maxSpeed
+        this.speed = speed
     }
-
     // accelerate
     accelerate(appliedPower: number) {
-        this.cadence += appliedPower
-        return this.cadence
+        this.cadense += appliedPower
+        return this.cadense
     }
 
     // ring bell
-    Ring_Bell() {
+    ringBell() {
         console.log('Ring ring!')
+    }
+
+    // status
+    status() {
+        this.speed = this.cadense * 2
+        console.log(`-> Speed: ${this.speed}`)
+        console.log(`-> Max Speed: ${this.maxSpeed}`)
+        console.log(`-> Color: ${this.color}`)
+        console.log(`-> Cadence: ${this.cadense}`)
     }
 }
 

@@ -23,10 +23,11 @@ bmx.accelerate(15)
 bmx.status()
 
 console.log('\nRing bell.')
+bmx.ringBell()
 
 const bigTruck = new Truck('Grey', 200, 'HGC-3456F')
 
-console.log('Created a Truck.\nStatus:\n')
+console.log('\nCreated a Truck.\nStatus:\n')
 bigTruck.status()
 
 console.log('\nAccelerating, 10 of power for ten seconds:')

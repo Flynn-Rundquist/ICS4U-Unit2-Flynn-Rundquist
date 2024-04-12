@@ -9,17 +9,24 @@
 import Vehicle from './Vehicle'
 
 class Truck extends Vehicle {
-    private liscencePlate: string
+    private lisencePlate: string
 
-    constructor (color = 'unknown', maxSpeed = 0, speed = 0, liscencePlate = 'unknown') {
+    constructor (color = 'unknown', maxSpeed = 0, lisencePlate = 'unknown', speed = 0) {
         super(color, maxSpeed, speed)
-        this.liscencePlate = liscencePlate
+        this.lisencePlate = lisencePlate
     }
 
     // air breaks
-    applyAir (speed: number, airPressure: number) {
-        this.speed = speed - airPressure / 2
+    applyAir (airPressure: number) {
+        this.speed = this.speed - airPressure / 2
         return this.speed
+    }
+    // status
+    status (): void {
+        console.log(`-> Speed: ${this.speed}`)
+        console.log(`-> Max Speed: ${this.maxSpeed}`)
+        console.log(`-> Color: ${this.color}`)
+        console.log(`-> Lisence Plate: ${this.lisencePlate}`)
     }
 }
 
