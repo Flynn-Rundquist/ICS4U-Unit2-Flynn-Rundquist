@@ -6,29 +6,29 @@
  * Since:   2022-04-10
  */
 
-import Vehicle from './Vehicle'
+import Vehicle from './Vehicle.ts'
 
 class Truck extends Vehicle {
-    private lisencePlate: string
+  private liscencePlate: string
 
-    constructor (color = 'unknown', maxSpeed = 0, lisencePlate = 'unknown', speed = 0) {
-        super(color, maxSpeed, speed)
-        this.lisencePlate = lisencePlate
-    }
+  constructor (color = 'unknown', maxSpeed = 0, speed = 0, liscencePlate = 'unknown') {
+    super(color, maxSpeed, speed)
+    this.liscencePlate = liscencePlate
+  }
 
-    // air breaks
-    applyAir (airPressure: number) {
-        this.speed = this.speed - airPressure / 2
-        return this.speed
-    }
-    // status
-    status (): void {
-        console.log(`-> Speed: ${this.speed}`)
-        console.log(`-> Max Speed: ${this.maxSpeed}`)
-        console.log(`-> Color: ${this.color}`)
-        console.log(`-> Lisence Plate: ${this.lisencePlate}`)
-    }
+  // air breaks
+  applyAir (speed: number, airPressure: number) {
+    this.speed = speed - airPressure / 2
+    return this.speed
+  }
+
+  plateStatus (): void {
+    console.log(`-> Liscence plate: ${this.liscencePlate}`)
+  }
+
+  applyAirStatus (): void {
+    console.log(`New Speed: ${this.speed}`)
+  }
 }
 
 export default Truck
-
