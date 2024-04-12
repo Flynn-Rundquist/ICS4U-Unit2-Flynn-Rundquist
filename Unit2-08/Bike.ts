@@ -31,7 +31,7 @@ class Bike extends Vehicle {
   }
 
   // ring bell
-  ringBell() {
+  ringBell(): void {
     console.log('Ding ding!')
   }
 
