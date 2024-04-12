@@ -12,8 +12,10 @@ class Bike extends Vehicle {
   private cadence: number
 
   constructor(color = 'unknown', maxSpeed = 0, speed = 0, cadence = 0) {
-    super(color, maxSpeed, speed)
+    super(maxSpeed, speed)
     this.cadence = cadence
+    this.color = color
+    this.tireNum = tireNum
   }
 
   // accelerate
@@ -22,9 +24,15 @@ class Bike extends Vehicle {
     return this.cadence
   }
 
+  // set cadense
+  setCadence(cadence: number) {
+    this.cadence = cadence
+    this.speed = cadence * 2
+  }
+
   // ring bell
-  Ring_Bell() {
-    console.log('Ring ring!')
+  ringBell() {
+    console.log('Ding ding!')
   }
 
   cadencestatus (): void {
