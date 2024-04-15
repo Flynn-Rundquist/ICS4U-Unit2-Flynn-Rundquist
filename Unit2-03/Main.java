@@ -18,9 +18,13 @@ final class Main {
         fruits.push("banana");
         fruits.push("cherry");
         System.out.println("Fruits: " + fruits.show());
+        System.out.println("Is the stack empty? " + fruits.isEmpty());
+        System.out.println("The size of the stack is: " + fruits.size());
         String removed = fruits.pop();
         System.out.println("Popped: " + removed);
         System.out.println("Fruits: " + fruits.show());
+        System.out.println("Is the stack empty? " + fruits.isEmpty());
+        System.out.println("The size of the stack is: " + fruits.size());
         System.out.println("\n");
 
         FlynnStack final colours = new FlynnStack();
@@ -28,9 +32,13 @@ final class Main {
         colours.push("blue");
         colours.push("purple");
         System.out.println("Colours: " + colours.show());
-        removed1 = colours.pop();
+        System.out.println("Is the stack empty? " + colours.isEmpty());
+        System.out.println("The size of the stack is: " + colours.size());
+        String removed1 = colours.pop();
         System.out.println("Popped: " + removed1);
         System.out.println("Colours: " + colours.show());
+        System.out.println("Is the stack empty? " + colours.isEmpty());
+        System.out.println("The size of the stack is: " + colours.size());
         System.out.println("\n");
 
         FlynnStack final animals = new FlynnStack();
@@ -38,9 +46,13 @@ final class Main {
         animals.push("bird");
         animals.push("cat");
         System.out.println("Animals: " + animals.show());
-        removed2 = animals.pop();
+        System.out.println("Is the stack empty? " + animals.isEmpty());
+        System.out.println("The size of the stack is: " + animals.size());
+        String removed2 = animals.pop();
         System.out.println("Popped: " + removed2);
         System.out.println("Animals: " + animals.show());
+        System.out.println("Is the stack empty? " + animals.isEmpty());
+        System.out.println("The size of the stack is: " + animals.size());
 
         System.out.println("\nDone.");
     }
