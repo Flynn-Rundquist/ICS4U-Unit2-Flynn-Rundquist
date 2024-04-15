@@ -24,7 +24,12 @@ final class Main {
         System.out.println("Popped: " + removed);
         System.out.println("Fruits: " + fruits.show());
         System.out.println("Is the stack empty? " + fruits.isEmpty());
+        System.out.println("Top item: " + fruits.peekItem());
         System.out.println("The size of the stack is: " + fruits.size());
+        System.out.println("Emptying the stack...");
+        fruits.clearStack();
+        System.out.println("Fruits: " + fruits.show());
+        System.out.println("Is the stack empty? " + fruits.isEmpty());
         System.out.println("\n");
 
         FlynnStack final colours = new FlynnStack();
@@ -36,9 +41,13 @@ final class Main {
         System.out.println("The size of the stack is: " + colours.size());
         String removed1 = colours.pop();
         System.out.println("Popped: " + removed1);
+        System.out.println("Top item: " + colours.peekItem());
+        System.out.println("Colours: " + colours.show());
+        System.out.println("The size of the stack is: " + colours.size());
+        System.out.println("Emptying the stack...");
+        colours.clearStack();
         System.out.println("Colours: " + colours.show());
         System.out.println("Is the stack empty? " + colours.isEmpty());
-        System.out.println("The size of the stack is: " + colours.size());
         System.out.println("\n");
 
         FlynnStack final animals = new FlynnStack();
@@ -50,9 +59,13 @@ final class Main {
         System.out.println("The size of the stack is: " + animals.size());
         String removed2 = animals.pop();
         System.out.println("Popped: " + removed2);
+        System.out.println("Top item: " + animals.peekItem());
+        System.out.println("Animals: " + animals.show());
+        System.out.println("The size of the stack is: " + animals.size());
+        System.out.println("Emptying the stack...");
+        animals.clearStack();
         System.out.println("Animals: " + animals.show());
         System.out.println("Is the stack empty? " + animals.isEmpty());
-        System.out.println("The size of the stack is: " + animals.size());
 
         System.out.println("\nDone.");
     }

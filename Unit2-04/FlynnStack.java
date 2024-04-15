@@ -71,6 +71,22 @@ final class FlynnStack {
     }
 
     /**
+     * Clears the stack.
+     */
+    public void clearStack() {
+        stack = new String[0];
+    }
+
+    /**
+     * Shows first item in the stack.
+     *
+     * @return The first item
+     */
+    public String peekItem() {
+        return stack[stack.length - 1];
+    }
+
+    /**
      * Shows the stack.
      *
      * @return The stack
