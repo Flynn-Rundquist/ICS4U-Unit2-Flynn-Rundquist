@@ -37,11 +37,7 @@ bigTruck.plateStatus()
 console.log('\nAccelerating, 10 of power for ten seconds:')
 bigTruck.accelerate(10, 10)
 
-console.log('\nBreaking, 10 of power for 10 sec.')
-bigTruck.accelerate(10, 10)
-
-console.log('\nApplied air pressure of 10:')
-bigTruck.break(10, 10, 10)
+console.log('\nBreaking, 10 of power and 10 air pressure for 10 sec.')
+bigTruck.brake(10, 10, 10)
 
 console.log('\nDone.')
-
