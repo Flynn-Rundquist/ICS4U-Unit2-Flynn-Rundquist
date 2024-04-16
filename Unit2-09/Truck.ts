@@ -19,7 +19,7 @@ class Truck extends Vehicle {
   }
 
   // air breaks
-  brake (breakPower: number, breakTime: number, airPressure: number): number {
+  break (breakPower: number, breakTime: number, airPressure: number): number {
     super.break(breakPower, breakTime)
     this.speed -= (airPressure * breakTime)
     return this.speed
