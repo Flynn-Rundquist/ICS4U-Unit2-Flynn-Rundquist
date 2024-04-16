@@ -21,7 +21,7 @@ class Truck extends Vehicle {
   // air breaks
   break (breakPower: number, breakTime: number, airPressure: number): number {
     this.speed -= (breakPower * breakTime) - (airPressure * breakTime)
-    return this.speed
+    console.log(`New Speed: ${this.speed}`)
   }
   // liscence plate
   plateStatus (): void {
