@@ -20,8 +20,7 @@ class Truck extends Vehicle {
 
   // air breaks
   break (breakPower: number, breakTime: number, airPressure: number): number {
-    super.break(breakPower, breakTime)
-    this.speed -= (airPressure * breakTime)
+    this.speed -= (breakPower * breakTime) - (airPressure * breakTime)
     return this.speed
   }
   // liscence plate
