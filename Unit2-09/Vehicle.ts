@@ -28,7 +28,7 @@ class Vehicle {
   // brake method
   break (brakePower: number, brakeTime: number) {
     this.speed -= (brakePower * brakeTime)
-    return this.speed
+    console.log(`New speed: ${this.speed}`)
   }
 
   // status method
