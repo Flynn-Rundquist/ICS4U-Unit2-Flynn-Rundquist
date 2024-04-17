@@ -20,7 +20,7 @@ class Truck extends Vehicle {
 
   // air breaks
   public break (breakPower: number, breakTime: number, airPressure?: number): void {
-    this.speed -= (breakPower * breakTime) - (airPressure ?? 0 * breakTime)
+    this.speed -= (breakPower * breakTime) - ((airPressure ?? 0) * breakTime)
     console.log(`New Speed: ${this.speed}`)
   }
 
