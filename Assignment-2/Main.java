@@ -8,7 +8,6 @@ import java.util.Scanner;
  * @since 2024-04-17
  */
 
-
 final class Main {
     /**
     * The main() method.
