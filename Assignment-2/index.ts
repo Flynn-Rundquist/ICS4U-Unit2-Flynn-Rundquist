@@ -9,7 +9,7 @@
 
 import { createPrompt } from "bun-promptx"
 
-function longestRun(inputString: string) {
+function longestRun() {
   let currentRun = 1
   let longestRun = 1
   let counter = 1
