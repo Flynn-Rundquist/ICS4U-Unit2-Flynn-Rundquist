@@ -1,6 +1,6 @@
 /**
  * This program returns the longest run in a string.
- * 
+ *
  * @author Flynn Rundquist
  * @version 1.0
  * @since 2024-04-17
@@ -8,12 +8,13 @@
 
 import java.util.Scanner;
 
-public class Main {
-    /**
-     * The main() method
-     * 
-     * @param args The command-line arguments
-     */
+final class Main {
+/**
+* The main() method.
+*
+* @param args The command-line arguments
+* @null No return value
+*/
 
 private Main() {
         // Private constructor to prevent instantiation
@@ -21,7 +22,7 @@ private Main() {
 
     /**
      * The main method to execute the program.
-     * 
+     *
      * @param args The command-line arguments
      */
     public static void main(final String[] args) {
@@ -43,7 +44,7 @@ private Main() {
 
     /**
      * Calculates the longest run of adjacent characters in a string.
-     * 
+     *
      * @param inputString The input string
      * @return The length of the longest run
      */
@@ -53,7 +54,8 @@ private Main() {
         int counter = 1;
 
         while (counter < inputString.length()) {
-            if (inputString.charAt(counter) == inputString.charAt(counter - 1)) {
+            if (inputString.charAt(counter) ==
+            inputString.charAt(counter - 1)) {
                 currentRun++;
             } else {
                 currentRun = 1;
