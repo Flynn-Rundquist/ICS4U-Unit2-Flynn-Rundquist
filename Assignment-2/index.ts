@@ -7,9 +7,9 @@
  * since 2024-04
  */
 
-import { createPrompt } from "bun-promptx"
+const { createPrompt } = require("bun-promptx")
 
-function longestRun() {
+function longestRun(inputString) {
   let currentRun = 1
   let longestRun = 1
   let counter = 1
