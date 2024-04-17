@@ -9,12 +9,11 @@
 import java.util.Scanner;
 
 final class Main {
-/**
-* The main() method.
-*
-* @param args The command-line arguments
-* @null No return value
-*/
+    /**
+    * The main() method.
+    *
+    * @null No return value
+    */
 
     private Main() {
     // Private constructor to prevent instantiation
@@ -56,7 +55,7 @@ final class Main {
         while (counter < inputString.length()) {
             if (inputString.charAt(counter)
                 == inputString.charAt(counter - 1)) {
-                    currentRun++;
+                currentRun++;
             } else {
                 currentRun = 1;
             }
