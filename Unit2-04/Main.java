@@ -39,7 +39,7 @@ final class Main {
         System.out.println("Colours: " + colours.show());
         System.out.println("Is the stack empty? " + colours.isEmpty());
         System.out.println("The size of the stack is: " + colours.size());
-        String removed1 = colours.pop();
+        Float final removed1 = colours.pop();
         System.out.println("Popped: " + removed1);
         System.out.println("Top item: " + colours.peekItem());
         System.out.println("Colours: " + colours.show());

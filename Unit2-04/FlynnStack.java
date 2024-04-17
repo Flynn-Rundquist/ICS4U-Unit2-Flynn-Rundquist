@@ -28,7 +28,7 @@ final class FlynnStack {
      * @param item The item to push
      */
     public void push(String item) {
-        String[] newStack = new String[stack.length + 1];
+        final String[] newStack = new String[stack.length + 1];
         for (int counter = 0; counter < stack.length; counter++) {
             newStack[counter] = stack[counter];
         }
@@ -42,8 +42,8 @@ final class FlynnStack {
      * @return The item
      */
     public String pop() {
-        String top_item = stack[stack.length - 1];
-        String[] newStack = new String[stack.length - 1];
+        final String topItem = stack[stack.length - 1];
+        final String[] newStack = new String[stack.length - 1];
         for (int counter = 0; counter < newStack.length; counter++) {
             newStack[counter] = stack[counter];
         }
@@ -66,7 +66,7 @@ final class FlynnStack {
      * @return The size
      */
     public int size() {
-        int stackSize = stack.length;
+        final int stackSize = stack.length;
         return stackSize;
     }
 
