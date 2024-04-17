@@ -17,7 +17,7 @@ final class Main {
 */
 
 private Main() {
-        // Private constructor to prevent instantiation
+    // Private constructor to prevent instantiation
     }
 
     /**
@@ -54,8 +54,8 @@ private Main() {
         int counter = 1;
 
         while (counter < inputString.length()) {
-            if (inputString.charAt(counter) ==
-            inputString.charAt(counter - 1)) {
+            if (inputString.charAt(counter) 
+            == inputString.charAt(counter - 1)) {
                 currentRun++;
             } else {
                 currentRun = 1;
