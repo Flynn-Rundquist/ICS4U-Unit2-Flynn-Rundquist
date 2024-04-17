@@ -13,7 +13,7 @@ final class Main {
      * @param args The command line arguments
      */
     public static void main(String[] args) {
-        FlynnStack final fruits = new FlynnStack();
+        FlynnStack fruits = new FlynnStack();
         fruits.push("apple");
         fruits.push("banana");
         fruits.push("cherry");
@@ -32,7 +32,7 @@ final class Main {
         System.out.println("Is the stack empty? " + fruits.isEmpty());
         System.out.println("\n");
 
-        FlynnStack final colours = new FlynnStack();
+        FlynnStack colours = new FlynnStack();
         colours.push("red");
         colours.push("blue");
         colours.push("purple");
@@ -50,7 +50,7 @@ final class Main {
         System.out.println("Is the stack empty? " + colours.isEmpty());
         System.out.println("\n");
 
-        FlynnStack final animals = new FlynnStack();
+        FlynnStack animals = new FlynnStack();
         animals.push("dog");
         animals.push("bird");
         animals.push("cat");
