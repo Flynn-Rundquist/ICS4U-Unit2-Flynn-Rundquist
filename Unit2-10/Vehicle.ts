@@ -6,7 +6,7 @@
  * Since:   2024-04-02
  */
 
-class Vehicle {
+abstract class Vehicle {
   protected color: string
   protected speed: number
   protected maxSpeed: number
