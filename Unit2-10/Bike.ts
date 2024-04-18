@@ -19,7 +19,7 @@ class Bike extends Vehicle {
   }
 
   // accelerate
-  accelerate(appliedPower: number) {
+  accelerate (appliedPower: number) {
     this.cadence += appliedPower
     return this.cadence
   }
