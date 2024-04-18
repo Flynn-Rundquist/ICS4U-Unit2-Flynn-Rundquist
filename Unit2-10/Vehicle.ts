@@ -6,7 +6,7 @@
  * Since:   2024-04-02
  */
 
-abstract class Vehicle {
+class Vehicle {
   protected color: string
   protected speed: number
   protected maxSpeed: number
@@ -40,4 +40,3 @@ abstract class Vehicle {
   }
 }
 export default Vehicle
-
