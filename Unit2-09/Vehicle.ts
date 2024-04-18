@@ -22,7 +22,7 @@ class Vehicle {
   // acceleration method
   accelerate (accelerationPower: number, accelerationTime: number) {
     this.speed += (accelerationPower * accelerationTime)
-    console.log(`New speed: ${this.speed}`)
+    return this.speed
   }
 
   // brake method
