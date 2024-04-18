@@ -24,7 +24,6 @@ bigTruck.status()
 bigTruck.plateStatus()
 
 // will not work
-console.log("\nCreating a vehicle (won't work).")
 const vehicle = new Vehicle(0, 0, 'Blue', 4)
 
 console.log("\nDone.")
