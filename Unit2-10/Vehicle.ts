@@ -6,7 +6,7 @@
  * Since:   2024-04-02
  */
 
-class Vehicle {
+abstract class Vehicle {
   protected color: string
   protected speed: number
   protected maxSpeed: number
@@ -28,7 +28,7 @@ class Vehicle {
   // brake method
   break (brakePower: number, brakeTime: number) {
     this.speed -= (brakePower * brakeTime)
-    console.log(`New speed: ${this.speed}`)
+    return this.speed
   }
 
   // status method
