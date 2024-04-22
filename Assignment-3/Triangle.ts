@@ -18,13 +18,15 @@ class Triangle {
     }
 
     // is valid method
-    public isValid (): boolean {
-        if (this.side1 + this.side2 > this.side3 && this.side2 + this.side3 > this.side1 && this.side3 + this.side1 > this.side2) {
-            return true
-        } else {
-            return false
-        }
+public isValid(): boolean {
+    if (this.side1 + this.side2 > this.side3 && 
+        this.side2 + this.side3 > this.side1 && 
+        this.side3 + this.side1 > this.side2) {
+        return true;
+    } else {
+        return false;
     }
+}
 
     // semiPerimeter method
     public semiPerimeter (): number {
