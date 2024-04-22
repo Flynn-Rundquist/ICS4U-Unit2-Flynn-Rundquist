@@ -49,6 +49,25 @@ public area(): number {
     return area;
 }
 
+// get type method
+public getType(): string {
+    if (!this.isValid()) {
+        return '-1';
+    }
+    
+    if (this.side1 === this.side2 && this.side2 === this.side3) {
+        return 'Equilateral';
+    } else if (this.side1 === this.side2 || this.side2 === this.side3 || this.side3 === this.side1) {
+        return 'Isosceles';
+    } else if (Math.sqrt(this.side1) + Math.sqrt(this.side2) === Math.sqrt(this.side3) || 
+               Math.sqrt(this.side2) + Math.sqrt(this.side3) === Math.sqrt(this.side1) || 
+               Math.sqrt(this.side3) + Math.sqrt(this.side1) === Math.sqrt(this.side2)) {
+        return 'Right Angle';
+    } else {
+        return 'Scalene';
+    }
+}
+
 // angle method in rads
 public angle(angleNumber: number): number {
     if (!this.isValid()) {
