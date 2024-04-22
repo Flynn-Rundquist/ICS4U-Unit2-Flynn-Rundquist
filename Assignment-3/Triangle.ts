@@ -86,13 +86,11 @@ class Triangle {
         return innerCircleRadius
     }
 
-    // circumference of inner circle method
-    public innerCircleCircumference (): number {
-        let innerCircleRadius = this.innerCircleRadius()
-        let innerCircleCircumference = 2 * Math.PI * innerCircleRadius
-        return innerCircleCircumference
+   // circumcircle circumference method
+    public circumsicleRadius() : number {
+        let circumsicleRadius = (this.side1 * this.side2 * this.side3) / (4 * this.area())
+        return circumsicleRadius
     }
-    
 }
 
 export default Triangle
