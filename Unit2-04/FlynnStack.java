@@ -42,13 +42,8 @@ final class FlynnStack {
      * @return The item
      */
     public String pop() {
-<<<<<<< HEAD
-        final String topItem = stack[stack.length - 1];
-        final String[] newStack = new String[stack.length - 1];
-=======
         final String top_item = stack[stack.length - 1];
         String[] newStack = new String[stack.length - 1];
->>>>>>> 1cb13533c8c32fd480a153107a916cc02565e2a1
         for (int counter = 0; counter < newStack.length; counter++) {
             newStack[counter] = stack[counter];
         }
