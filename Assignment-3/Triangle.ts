@@ -106,5 +106,6 @@ public circumsCircleRadius(): number {
     let circumsCircleRadius = (this.side1 * this.side2 * this.side3) / (4 * this.area());
     return circumsCircleRadius;
 }
+}
 
 export default Triangle
