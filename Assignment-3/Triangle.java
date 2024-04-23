@@ -12,7 +12,7 @@ public class Triangle {
     private int side2;
     private int side3;
     
-    public Triangle() {
+    public Triangle(int side1, int side2, int side3) {
         side1 = 0;
         side2 = 0;
         side3 = 0;

@@ -17,14 +17,17 @@ final class Main {
         Triangle triangle1 = new Triangle(3, 4, 5);
         System.out.println("Created a 3 mm by 4 mm by 5 mm triangle.");
         System.out.println("Is the triangle valid? " + triangle1.isValid());
-        System.out.println("The semi-perimeter of the triangle is: " + triangle1.semiPerimeter());
-        System.out.println("The area of the triangle is: " + triangle1.area());
-        System.out.println("The type of the triangle is: " + triangle1.getType());
-        System.out.println("The first angle of the triangle is: " + triangle1.angle(1));
-        System.out.println("The second angle of the triangle is: " + triangle1.angle(2));
-        System.out.println("The third angle of the triangle is: " + triangle1.angle(3));
-
-        Triangle triangle2 = new Triangle(3, 3, 3);
+        System.out.println("Semiperimeter: " + triangle1.semiPerimeter());
+        System.out.println("Area: " + triangle1.area());
+        System.out.println("Type: " + triangle1.getType());
+        System.out.println("Angle 1: " + triangle1.angle(1));
+        System.out.println("Angle 2: " + triangle1.angle(2));
+        System.out.println("Angle 3: " + triangle1.angle(3));
+        System.out.println("Height 1: " + triangle1.height(1));
+        System.out.println("Height 2: " + triangle1.height(2));
+        System.out.println("Height 3: " + triangle1.height(3));
+        System.out.println("Inner circle radius: " + triangle1.innerCircleRadius());
+        System.out.println("Circumcircle radius: " + triangle1.circumcircleRadius());
 
     }
 }
