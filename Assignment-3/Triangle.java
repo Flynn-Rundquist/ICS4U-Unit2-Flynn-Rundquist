@@ -27,27 +27,17 @@ public class Triangle {
     }
 
     public double semiPerimeter() {
-        if (!isValid().equals("false")) {
-            return -1;
-        } else {
-            int semiPerimeter = (side1 + side2 + side3) / 2;
-            return semiPerimeter;
-        }
+        int semiPerimeter = (side1 + side2 + side3) / 2;
+        return semiPerimeter;
     }
 
     public double area() {
-        if (!isValid().equals("false")) {
-            return -1;
-        } else {
-            double area = Math.sqrt(semiPerimeter() * (semiPerimeter() - side1) * (semiPerimeter() - side2) * (semiPerimeter() - side3));
-            return area;
-        }
+        double area = Math.sqrt(semiPerimeter() * (semiPerimeter() - side1) * (semiPerimeter() - side2) * (semiPerimeter() - side3));
+        return area;
     }
 
     public String getType() {
-        if (!isValid().equals("false")) {
-            return "-1";
-        } else if (side1 == side2 && side2 == side3) {
+        if (side1 == side2 && side2 == side3) {
             return "Equilateral";
         } else if (side1 == side2 || side2 == side3 || side3 == side1) {
             return "Isosceles";
@@ -56,11 +46,8 @@ public class Triangle {
         }
     }
 
-    public double angle(int angleNumber) {
-        
-        if (!isValid().equals("false")) {
-            return -1;
-        } else if (angleNumber == 1) {
+    public double angle(double angleNumber) {
+        if (angleNumber == 1) {
             double angle = Math.acos((Math.pow(side2, 2) + Math.pow(side3, 2) - Math.pow(side1, 2)) / (2 * side2 * side3));
             return angle;
         } else if (angleNumber == 2) {
@@ -72,10 +59,8 @@ public class Triangle {
         }
     }
 
-    public double height(int sideNumber) {
-        if (!isValid().equals("false")) {
-            return -1;
-        } else if (sideNumber == 1) {
+    public double height(double sideNumber) {
+        if (sideNumber == 1) {
             double height = (2 * area() / side1);
             return height;
         } else if (sideNumber == 2) {
@@ -88,22 +73,12 @@ public class Triangle {
         }
 
     public double innerCircleRadius() {
-        if (!isValid().equals("false")) {
-            return -1;
-        } else {
-            double radius = area() / semiPerimeter();
-            return radius;
-        }
+        double radius = area() / semiPerimeter();
+        return radius;
     }
 
     public double circumsCircleRadius() {
-        if (!isValid().equals("false")) {
-            return -1;
-        } else {
-            double radius = (side1 * side2 * side3) / (4 * area());
-            return radius;
-
+        double radius = (side1 * side2 * side3) / (4 * area());
+        return radius;
         }
     }
-
-}
