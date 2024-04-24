@@ -12,12 +12,15 @@ class Triangle {
      *
      * @param args The command line arguments
      */
-    private int side1;
-    private int side2;
-    private int side3;
+
     private int numberOne = 1;
     private int numberTwo = 2;
     private int numberThree = 3;
+
+    private int side1;
+    private int side2;
+    private int side3;
+
     /**
      * The constructor.
      *

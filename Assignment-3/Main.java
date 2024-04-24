@@ -6,7 +6,7 @@
  * @since 2024-04-23
  */
 
-class Main {
+public class Main {
     /**
      * The main() method.
      *
