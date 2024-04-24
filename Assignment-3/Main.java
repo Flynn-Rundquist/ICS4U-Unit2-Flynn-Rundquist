@@ -14,23 +14,21 @@ final class Main {
      */
     public static void main(String[] args) {
 
-        Triangle triangle1 = new Triangle(3, 4, 5);
-        System.out.println("Created a 3 mm by 4 mm by 5 mm triangle.");
-        System.out.println("Is the triangle valid? " + triangle1.isValid());
-        System.out.println("Semiperimeter: %.4f " + triangle1.semiPerimeter() + " mm.");
-        System.out.println("Area: %.4f " + triangle1.area() + " mm^2.");
-        System.out.println("Type " + triangle1.getType());
-        System.out.println("Angle 1: %.4f " + triangle1.angle(1) + " rads.");
-        System.out.println("Angle 2: %.4f " + triangle1.angle(2) + " rads.");
-        System.out.println("Angle 3: %.4f " + triangle1.angle(3) + " rads.");
-        System.out.println("Height 1: %.4f " + triangle1.height(1) + " mm.");
-        System.out.println("Height 2: %.4f " + triangle1.height(2) + " mm.");
-        System.out.println("Height 3: %.4f " + triangle1.height(3) + " mm.");
-        System.out.println("Inner circle radius: %.4f " + triangle1.innerCircleRadius() + " mm.");
-        System.out.println("Circumcircle radius: %.4f " + triangle1.circumsCircleRadius() + " mm.");
-        System.out.println("\n");
+        public static void main(String[] args) {
 
-        System.out.println("\nDone.");
-
+            Triangle triangle1 = new Triangle(3, 4, 5);
+            System.out.println("Created a 3 mm by 4 mm by 5 mm triangle.");
+            System.out.println("Is the triangle valid? " + triangle1.isValid());
+            System.out.printf("Semiperimeter: %.4f mm.", triangle1.semiPerimeter());
+            System.out.printf("Area: %.4f mm^2.", triangle1.area());
+            System.out.println("Type: " + triangle1.getType());
+            System.out.printf("Angle 1: %.4f rads.", triangle1.angle(1));
+            System.out.printf("Angle 2: %.4f rads.", triangle1.angle(2));
+            System.out.printf("Angle 3: %.4f rads.", triangle1.angle(3));
+            System.out.printf("Height 1: %.4f mm.", triangle1.height(1));
+            System.out.printf("Height 2: %.4f mm.", triangle1.height(2));
+            System.out.printf("Height 3: %.4f mm.", triangle1.height(3));
+            System.out.printf("Inner circle radius: %.4f mm.", triangle1.innerCircleRadius());
+            System.out.printf("Circumcircle radius: %.4f mm.", triangle1.circumsCircleRadius());
     }
 }
