@@ -5,6 +5,7 @@
  * @version 1.0
  * @since 2024-04-24
  */
+
 public class Airplane {
     private int speed;
 
