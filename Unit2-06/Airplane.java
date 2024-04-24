@@ -5,15 +5,13 @@
  * @version 1.0
  * @since 2024-04-24
  */
-
-public class Airplane{
+public class Airplane {
     private int speed;
+
     /**
      * This is the default constructor for the Airplane class.
-     *
-     * @param speed the speed
      */
-    public Airplane(){
+    public Airplane() {
         speed = 0;
     }
 
@@ -22,7 +20,7 @@ public class Airplane{
      *
      * @param speed the speed
      */
-    public Airplane(int speed){
+    public Airplane(int speed) {
         this.speed = speed;
     }
 
@@ -30,10 +28,17 @@ public class Airplane{
      * This method sets the speed of the airplane.
      *
      * @param speed the speed
+     */
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    /**
+     * This method gets the speed of the airplane.
+     *
      * @return the speed
      */
-    public int setSpeed(int speed){
-        this.speed = speed;
+    public int getSpeed() {
         return speed;
     }
 }
