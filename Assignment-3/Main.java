@@ -1,20 +1,21 @@
 /**
  * This is the Main() starting point.
- * 
+ *
  * @author Flynn Rundquist
  * @version 1.0
  * @since 2024-04-23
  */
 
-final class Main {
+class Main {
     /**
      * The main() method.
      *
      * @param args The command line arguments
      */
-    public static void main(String[] args) {
 
-        Triangle triangle1 = new Triangle(3, 4, 5);
+    static void main(String[] args) {
+
+        final Triangle triangle1 = new Triangle(3, 4, 5);
         System.out.println("Created a 3 mm by 4 mm by 5 mm triangle.");
         System.out.println("Is the triangle valid? " + triangle1.isValid());
         System.out.printf("Semiperimeter: %.4f mm.\n", triangle1.semiPerimeter());
@@ -29,7 +30,7 @@ final class Main {
         System.out.printf("Inner circle radius: %.4f mm\n", triangle1.innerCircleRadius());
         System.out.printf("Circumcircle radius: %.4f mm\n", triangle1.circumsCircleRadius());
 
-        Triangle triangle2 = new Triangle(3, 3,3);
+        final Triangle triangle2 = new Triangle(3, 3,3);
         System.out.println("\nCreated a 3 mm by 3 mm by 3 mm triangle.");
         System.out.println("Is the triangle valid? " + triangle2.isValid());
         System.out.printf("Semiperimeter: %.4f mm.\n", triangle2.semiPerimeter());
@@ -44,7 +45,7 @@ final class Main {
         System.out.printf("Inner circle radius: %.4f mm\n", triangle2.innerCircleRadius());
         System.out.printf("Circumcircle radius: %.4f mm\n", triangle2.circumsCircleRadius());
 
-        Triangle triangle3 = new Triangle(3, 4, 4);
+        final Triangle triangle3 = new Triangle(3, 4, 4);
         System.out.println("\nCreated a 3 mm by 4 mm by 4 mm triangle.");
         System.out.println("Is the triangle valid? " + triangle3.isValid());
         System.out.printf("Semiperimeter: %.4f mm.\n", triangle3.semiPerimeter());
@@ -59,7 +60,7 @@ final class Main {
         System.out.printf("Inner circle radius: %.4f mm\n", triangle3.innerCircleRadius());
         System.out.printf("Circumcircle radius: %.4f mm\n", triangle3.circumsCircleRadius());
 
-        Triangle triangle4 = new Triangle(2,3,4);
+        final Triangle triangle4 = new Triangle(2,3,4);
         System.out.println("\nCreated a 2 mm by 3 mm by 4 mm triangle.");
         System.out.println("Is the triangle valid? " + triangle4.isValid());
         System.out.printf("Semiperimeter: %.4f mm.\n", triangle4.semiPerimeter());
@@ -74,7 +75,7 @@ final class Main {
         System.out.printf("Inner circle radius: %.4f mm\n", triangle4.innerCircleRadius());
         System.out.printf("Circumcircle radius: %.4f mm\n", triangle4.circumsCircleRadius());
 
-        Triangle triangle5 = new Triangle(23,3,4);
+        final Triangle triangle5 = new Triangle(23,3,4);
         System.out.println("\nCreated a 23 mm by 3 mm by 4 mm triangle.");
         System.out.println("Is the triangle valid? " + triangle5.isValid());
         System.out.printf("Semiperimeter: %.4f mm.\n", triangle5.semiPerimeter());

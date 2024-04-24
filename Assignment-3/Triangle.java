@@ -30,7 +30,7 @@ public class Triangle {
         if (!this.isValid()) {
             return -1;
         } else {
-            int semiPerimeter = (side1 + side2 + side3) / 2;
+            final int semiPerimeter = (side1 + side2 + side3) / 2;
             return semiPerimeter;
         }
     }
@@ -39,7 +39,7 @@ public class Triangle {
         if (!this.isValid()) {
             return -1;
         } else {
-            double area = Math.sqrt(semiPerimeter() * (semiPerimeter() - side1) * (semiPerimeter() - side2) * (semiPerimeter() - side3));
+            final double area = Math.sqrt(semiPerimeter() * (semiPerimeter() - side1) * (semiPerimeter() - side2) * (semiPerimeter() - side3));
             return area;
         }
     }
@@ -60,13 +60,13 @@ public class Triangle {
         if (!this.isValid()) {
             return -1;
         } else if (angleNumber == 1) {
-            double angle = Math.acos((Math.pow(side2, 2) + Math.pow(side3, 2) - Math.pow(side1, 2)) / (2 * side2 * side3));
+            final double angle = Math.acos((Math.pow(side2, 2) + Math.pow(side3, 2) - Math.pow(side1, 2)) / (2 * side2 * side3));
             return angle;
         } else if (angleNumber == 2) {
-            double angle = Math.acos((Math.pow(side3, 2) + Math.pow(side1, 2) - Math.pow(side2, 2)) / (2 * side3 * side1));
+            final double angle = Math.acos((Math.pow(side3, 2) + Math.pow(side1, 2) - Math.pow(side2, 2)) / (2 * side3 * side1));
             return angle;
         } else if (angleNumber == 3) {
-            double angle = Math.acos((Math.pow(side1, 2) + Math.pow(side2, 2) - Math.pow(side3, 2)) / (2 * side1 * side2));
+            final double angle = Math.acos((Math.pow(side1, 2) + Math.pow(side2, 2) - Math.pow(side3, 2)) / (2 * side1 * side2));
             return angle;
         }
         return angle(angleNumber);
@@ -76,13 +76,13 @@ public class Triangle {
         if (!this.isValid()) {
             return -1;
         } else if (sideNumber == 1) {
-            double height = (2 * area() / side1);
+            final double height = (2 * area() / side1);
             return height;
         } else if (sideNumber == 2) {
-            double height = (2 * area() / side2);
+            final double height = (2 * area() / side2);
             return height;
         } else if (sideNumber == 3) {
-            double height = (2 * area() / side3);
+            final double height = (2 * area() / side3);
             return height;
         }
         return height(sideNumber);
@@ -92,7 +92,7 @@ public class Triangle {
         if (!this.isValid()) {
             return -1;
         } else {
-            double radius = area() / semiPerimeter();
+            final double radius = area() / semiPerimeter();
             return radius;
         }
     }
@@ -101,7 +101,7 @@ public class Triangle {
         if (!this.isValid()) {
             return -1;
         } else {
-            double radius = (side1 * side2 * side3) / (4 * area());
+            final double radius = (side1 * side2 * side3) / (4 * area());
             return radius;
 
         }
