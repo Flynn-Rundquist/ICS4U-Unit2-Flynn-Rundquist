@@ -19,7 +19,7 @@ public class Jet extends Airplane {
     }
 
     public void accelerate() {
-        setSpeed(super.getSpeed() * 2);
+        setSpeed(getSpeed() * 2);
     }
 
 }
