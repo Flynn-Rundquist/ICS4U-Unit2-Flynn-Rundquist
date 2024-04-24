@@ -18,16 +18,16 @@ public class Triangle {
         this.side3 = side3;
     }
 
-    public String isValid() {
-        if (side1 + side2 > side3 && side2 + side3 > side1 && side3 + side1 > side1) {
-            return "true";
+    public boolean isValid() {
+        if (side1 + side2 > side3 || side2 + side3 > side1 || side3 + side1 > side1) {
+            return true;
         } else {
-            return "false";
+            return false;
         }
     }
 
     public double semiPerimeter() {
-        if (!isValid().equals("false")) {
+        if (!isValid()) {
             return -1;
         } else {
             int semiPerimeter = (side1 + side2 + side3) / 2;
@@ -36,7 +36,7 @@ public class Triangle {
     }
 
     public double area() {
-        if (!isValid().equals("false")) {
+        if (!isValid()) {
             return -1;
         } else {
             double area = Math.sqrt(semiPerimeter() * (semiPerimeter() - side1) * (semiPerimeter() - side2) * (semiPerimeter() - side3));
@@ -45,7 +45,7 @@ public class Triangle {
     }
 
     public String getType() {
-        if (!isValid().equals("false")) {
+        if (!isValid()) {
             return "-1";
         } else if (side1 == side2 && side2 == side3) {
             return "Equilateral";
@@ -56,9 +56,8 @@ public class Triangle {
         }
     }
 
-    public double angle(int angleNumber) {
-        
-        if (!isValid().equals("false")) {
+    public double angle(double angleNumber) {
+        if (!isValid()) {
             return -1;
         } else if (angleNumber == 1) {
             double angle = Math.acos((Math.pow(side2, 2) + Math.pow(side3, 2) - Math.pow(side1, 2)) / (2 * side2 * side3));
@@ -70,10 +69,11 @@ public class Triangle {
             double angle = Math.acos((Math.pow(side1, 2) + Math.pow(side2, 2) - Math.pow(side3, 2)) / (2 * side1 * side2));
             return angle;
         }
+        return angle(angleNumber);
     }
 
-    public double height(int sideNumber) {
-        if (!isValid().equals("false")) {
+    public double height(double sideNumber) {
+        if (!isValid()) {
             return -1;
         } else if (sideNumber == 1) {
             double height = (2 * area() / side1);
@@ -85,10 +85,11 @@ public class Triangle {
             double height = (2 * area() / side3);
             return height;
         }
+        return height(sideNumber);
         }
 
     public double innerCircleRadius() {
-        if (!isValid().equals("false")) {
+        if (!isValid()) {
             return -1;
         } else {
             double radius = area() / semiPerimeter();
@@ -97,7 +98,7 @@ public class Triangle {
     }
 
     public double circumsCircleRadius() {
-        if (!isValid().equals("false")) {
+        if (!isValid()) {
             return -1;
         } else {
             double radius = (side1 * side2 * side3) / (4 * area());
